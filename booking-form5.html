@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на мероприятие</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Цвет фона страницы */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #072f5b; /* Цвет фона шапки */
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    padding-left: 20px; /* Отступ слева для логотипа */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+main {
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.booking-form {
+    width: 100%;
+    max-width: 400px; /* Максимальная ширина формы */
+    background-color: #ffffff; /* Цвет фона формы */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+small {
+    font-size: 12px;
+    color: #777;
+}
+
+.button {
+    background-color: #072f5b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #072f5b;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PRE-UNI</h1>
+        </div>
+    </header>
+    <main class="container">
+        <h1>Запись на мероприятие</h1>
+        <form action="confirmation5.html" method="POST" class="booking-form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Номер телефона:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required>
+            <small>Введите 11 цифр без пробелов и дефисов</small>
+
+            <label for="date">Выберите день:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit" class="button">Записаться</button>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Цвет фона страницы */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #072f5b; /* Цвет фона шапки */
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.logo {
+    padding-left: 20px; /* Отступ слева для логотипа */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+main {
+    width: 80%;
+    margin-top: 20px;
+    display: flex; /* Расположение блоков в столбец */
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.blocks-container {
+    display: flex; /* Расположение блоков в ряд */
+    justify-content: space-between; /* Равномерное распределение между блоками */
+    width: 100%; /* Ширина контейнера блоков */
+}
+
+.block {
+    background-color: #ffffff; /* Цвет фона блоков */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(30% - 10px); /* Ширина блока с учетом отступов */
+    margin-bottom: 20px;
+    text-align: center; /* Выравнивание текста по центру */
+    display: flex; /* Расположение элементов в столбец */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block img {
+    max-width: 100%; /* Размер изображений по ширине */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Отступ между изображениями */
+}
+
+.block p {
+    margin-top: 10px;
+    font-size: 16px;
+    flex-grow: 1; /* Растягиваем текст на всю доступную высоту */
+}
+
+.button {
+    display: inline-block;
+    background-color: #072f5b;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #072f5b;
+}
